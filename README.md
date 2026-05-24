@@ -1,8 +1,8 @@
-![Intelligent Infrastructure Ecosystems Banner](banner.svg)
+![Raghuramreddy banner](banner.svg)
 
-# Intelligent Infrastructure Ecosystems
+# Raghuramreddy
 
-Operational Intelligence | Lifecycle Governance | Infrastructure Cognition | Human-Governed AI Systems
+**Intelligent Infrastructure Ecosystems Architect**
 
 > Modern infrastructure systems are evolving operational ecosystems shaped by lifecycle intelligence, operational signals, governance constraints, dependency relationships, and human-guided AI cognition.
 

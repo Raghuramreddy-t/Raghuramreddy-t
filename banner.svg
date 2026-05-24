@@ -4,9 +4,9 @@
   <circle cx="280" cy="240" r="92" fill="rgba(59,130,246,0.12)" stroke="rgba(59,130,246,0.35)" stroke-width="2"/>
   <circle cx="280" cy="240" r="54" fill="rgba(59,130,246,0.18)" stroke="rgba(103,232,249,0.28)" stroke-width="2"/>
   <text x="280" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#F8FAFC">IIE</text>
-  <text x="430" y="178" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="800" fill="#F8FAFC">Intelligent Infrastructure Ecosystems</text>
-  <text x="430" y="232" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#CBD5E1">Operational Intelligence | Lifecycle Governance | Infrastructure Cognition</text>
+  <text x="430" y="178" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="800" fill="#F8FAFC">Raghuramreddy</text>
+  <text x="430" y="232" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#CBD5E1">Intelligent Infrastructure Ecosystems Architect</text>
   <line x1="430" y1="270" x2="1170" y2="270" stroke="rgba(148,163,184,0.18)" stroke-width="1"/>
-  <text x="430" y="318" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="500" fill="#94A3B8">Human-Governed AI Systems | Unified XOps | Secure Supply Chains</text>
+  <text x="430" y="318" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="500" fill="#94A3B8">Operational Intelligence | Lifecycle Governance | Infrastructure Cognition</text>
   <text x="430" y="352" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="400" fill="#94A3B8">Designing resilient, governed, lifecycle-aware infrastructure ecosystems.</text>
 </svg>
