@@ -1,244 +1,240 @@
-<svg width="1600" height="500" viewBox="0 0 1600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="950" viewBox="0 0 1800 950" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FBFF"/>
+      <stop offset="52%" stop-color="#EEF7FF"/>
+      <stop offset="100%" stop-color="#F7F1FF"/>
+    </linearGradient>
 
-<defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
 
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0%" stop-color="#070B14"/>
-<stop offset="100%" stop-color="#111827"/>
-</linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0B1020" flood-opacity="0.14"/>
+    </filter>
 
-<linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-<stop offset="0%" stop-color="#22D3EE"/>
-<stop offset="50%" stop-color="#4F7CFF"/>
-<stop offset="100%" stop-color="#8B5CF6"/>
-</linearGradient>
+    <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.4" fill="#60A5FA" opacity="0.20"/>
+    </pattern>
 
-<radialGradient id="glowBlue">
-<stop offset="0%" stop-color="#22D3EE"/>
-<stop offset="100%" stop-color="#0B1020"/>
-</radialGradient>
+    <style>
+      .font { font-family: Inter, Segoe UI, Arial, sans-serif; }
+      .script { font-family: "Brush Script MT", "Segoe Script", cursive; }
 
-<radialGradient id="glowPurple">
-<stop offset="0%" stop-color="#8B5CF6"/>
-<stop offset="100%" stop-color="#0B1020"/>
-</radialGradient>
+      .name { font-size: 76px; fill: #0B3B75; }
+      .tagline { font-size: 21px; fill: #334155; }
 
-<filter id="blur">
-<feGaussianBlur stdDeviation="10"/>
-</filter>
+      .top { font-size: 18px; font-weight: 850; letter-spacing: 0.8px; fill: #10213F; }
 
-<style>
+      .title { font-size: 56px; font-weight: 900; letter-spacing: -1.2px; fill: #0B1733; }
+      .subtitle { font-size: 29px; font-weight: 800; fill: #1E3A8A; }
 
-.title {
-font: 700 62px 'Segoe UI', sans-serif;
-fill: #F8FAFC;
-letter-spacing: 1px;
-}
+      .flow-title { font-size: 16px; font-weight: 900; letter-spacing: 0.7px; fill: #0B1733; }
+      .flow-text { font-size: 13.5px; fill: #334155; }
 
-.subtitle {
-font: 500 22px 'Segoe UI', sans-serif;
-fill: #CBD5E1;
-}
+      .chip-title { font-size: 15px; font-weight: 900; letter-spacing: 0.4px; fill: #0B1733; }
+      .chip-text { font-size: 13.5px; fill: #475569; }
 
-.identity {
-font: 700 36px 'Segoe UI', sans-serif;
-fill: #F8FAFC;
-}
+      .node {
+        fill: #FFFFFF;
+        stroke: url(#accent);
+        stroke-width: 4;
+        filter: url(#shadow);
+      }
 
-.small {
-font: 500 18px 'Segoe UI', sans-serif;
-fill: #94A3B8;
-letter-spacing: 1.5px;
-}
+      .card {
+        fill: #FFFFFF;
+        stroke: #CFE2FF;
+        stroke-width: 1.5;
+        filter: url(#shadow);
+      }
 
-.node {
-font: 700 14px 'Segoe UI', sans-serif;
-fill: #E2E8F0;
-letter-spacing: 2px;
-}
+      .pulse {
+        animation: pulse 4s ease-in-out infinite;
+        transform-origin: center;
+      }
 
-.url {
-font: 700 18px 'Segoe UI', sans-serif;
-fill: #F8FAFC;
-}
+      .float {
+        animation: float 7s ease-in-out infinite;
+      }
 
-</style>
+      .dash {
+        stroke-dasharray: 10 16;
+        animation: dash 9s linear infinite;
+      }
 
-</defs>
+      .fade {
+        animation: fade 4s ease-in-out infinite;
+      }
 
-<!-- background -->
+      @keyframes pulse {
+        0%, 100% { opacity: 0.72; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.06); }
+      }
 
-<rect width="1600" height="500" fill="url(#bg)"/>
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-7px); }
+      }
 
-<!-- atmospheric gradients -->
+      @keyframes dash {
+        to { stroke-dashoffset: -120; }
+      }
 
-<circle cx="1350" cy="120" r="220" fill="url(#glowPurple)" opacity="0.25" filter="url(#blur)"/>
+      @keyframes fade {
+        0%, 100% { opacity: 0.42; }
+        50% { opacity: 0.95; }
+      }
+    </style>
+  </defs>
 
-<circle cx="1180" cy="320" r="240" fill="url(#glowBlue)" opacity="0.18" filter="url(#blur)"/>
+  <rect width="1800" height="950" fill="url(#bg)"/>
 
-<circle cx="250" cy="120" r="180" fill="url(#glowBlue)" opacity="0.12" filter="url(#blur)"/>
+  <rect x="1020" y="40" width="560" height="170" fill="url(#dots)" opacity="0.42"/>
 
-<!-- subtle grid -->
+  <path d="M1080 855 C1220 775 1345 880 1480 800 C1580 745 1670 800 1800 740 L1800 950 L1080 950 Z" fill="#DFF3FF" opacity="0.72"/>
+  <path class="dash" d="M1120 878 C1245 816 1345 900 1490 830 C1600 780 1690 842 1800 790" fill="none" stroke="#22D3EE" stroke-width="3" opacity="0.42"/>
+  <path class="dash" d="M1210 908 C1320 850 1420 925 1535 860 C1630 815 1710 875 1800 845" fill="none" stroke="#8B5CF6" stroke-width="3" opacity="0.32"/>
 
-<g opacity="0.05">
+  <!-- Left animated intelligence core -->
+  <g transform="translate(115 145)" filter="url(#shadow)">
+    <circle class="pulse" cx="180" cy="180" r="150" fill="#DFF7FF" opacity="0.65"/>
+    <circle cx="180" cy="180" r="104" fill="#EEF2FF" opacity="0.8"/>
+    <circle cx="180" cy="180" r="68" fill="#FFFFFF" stroke="url(#accent)" stroke-width="4"/>
+    <circle class="pulse" cx="180" cy="180" r="37" fill="#0B1020"/>
+    <circle class="fade" cx="180" cy="180" r="15" fill="#22D3EE"/>
 
-<path d="M0 100H1600"/>
-<path d="M0 200H1600"/>
-<path d="M0 300H1600"/>
-<path d="M0 400H1600"/>
+    <circle cx="180" cy="180" r="125" fill="none" stroke="#22D3EE" stroke-width="3" opacity="0.35" stroke-dasharray="12 12"/>
+    <circle cx="180" cy="180" r="158" fill="none" stroke="#8B5CF6" stroke-width="3" opacity="0.25" stroke-dasharray="18 14"/>
 
-<path d="M200 0V500"/>
-<path d="M400 0V500"/>
-<path d="M600 0V500"/>
-<path d="M800 0V500"/>
-<path d="M1000 0V500"/>
-<path d="M1200 0V500"/>
-<path d="M1400 0V500"/>
+    <g class="float">
+      <circle cx="60" cy="96" r="30" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="3"/>
+      <text x="60" y="106" text-anchor="middle" class="font" font-size="23" font-weight="900" fill="#1D4ED8">&lt;/&gt;</text>
+    </g>
 
-</g>
+    <g class="float" style="animation-delay:1.5s">
+      <circle cx="306" cy="88" r="30" fill="#FFFFFF" stroke="#22D3EE" stroke-width="3"/>
+      <path d="M306 70 L324 78 V102 L306 115 L288 102 V78 Z" fill="none" stroke="#1D4ED8" stroke-width="3"/>
+    </g>
 
-<!-- cognition symbol -->
+    <g class="float" style="animation-delay:2.4s">
+      <circle cx="312" cy="284" r="30" fill="#FFFFFF" stroke="#38BDF8" stroke-width="3"/>
+      <path d="M295 284 H329 M312 267 V301" stroke="#1D4ED8" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
 
-<circle cx="180" cy="170" r="70"
-fill="#0F172A"
-stroke="#334155"
-stroke-width="2"/>
+  <!-- Signature -->
+  <text x="455" y="142" class="script name">Raghuramreddy</text>
+  <path d="M482 162 C610 188 755 178 890 162" fill="none" stroke="url(#accent)" stroke-width="5" stroke-linecap="round"/>
+  <text x="486" y="204" class="font tagline">Designing technology for human experience</text>
 
-<circle cx="180" cy="170" r="28"
-fill="#22D3EE"/>
+  <!-- Top row moved inward with huge right margin -->
+  <g class="font" transform="translate(840 90)">
+    <text x="0" y="8" class="top">LIFECYCLE INTELLIGENCE</text>
+    <line x1="295" y1="-18" x2="295" y2="26" stroke="#CBD5E1" stroke-width="1.2"/>
 
-<circle cx="180" cy="170" r="10"
-fill="#F8FAFC"/>
+    <text x="330" y="8" class="top">OPERATIONAL INTELLIGENCE</text>
+    <line x1="675" y1="-18" x2="675" y2="26" stroke="#CBD5E1" stroke-width="1.2"/>
 
-<!-- signal waves -->
+    <text x="710" y="8" class="top">HUMAN-GOVERNED AI</text>
+  </g>
 
-<path d="
-M980 260
-C1100 180 1220 340 1360 250
-C1450 200 1500 280 1600 220"
-stroke="url(#line)"
-stroke-width="4"
-stroke-linecap="round"
-opacity="0.9"/>
+  <!-- Main title -->
+  <g class="font" transform="translate(520 300)">
+    <line x1="0" y1="-42" x2="210" y2="-42" stroke="url(#accent)" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="230" cy="-42" r="8" fill="#8B5CF6"/>
+    <text class="title" x="0" y="20">Intelligent Infrastructure Ecosystems</text>
+    <text class="subtitle" x="2" y="68">EOCS — Enterprise Operational Cognition System</text>
+  </g>
 
-<path d="
-M950 300
-C1100 240 1260 360 1450 280"
-stroke="#22D3EE"
-stroke-width="1.5"
-opacity="0.25"/>
+  <!-- Middle flow fully bounded -->
+  <g class="font" transform="translate(470 430)">
+    <line class="dash" x1="62" y1="45" x2="1055" y2="45" stroke="#BFD7FF" stroke-width="3" opacity="0.68"/>
 
-<!-- typography -->
+    <g transform="translate(0 0)">
+      <circle cx="45" cy="45" r="38" class="node"/>
+      <rect x="29" y="27" width="32" height="10" rx="2" fill="none" stroke="#1E3A8A" stroke-width="3"/>
+      <rect x="29" y="45" width="32" height="10" rx="2" fill="none" stroke="#1E3A8A" stroke-width="3"/>
+      <text x="45" y="112" text-anchor="middle" class="flow-title">INFRASTRUCTURE</text>
+      <text x="45" y="137" text-anchor="middle" class="flow-text">Systems at scale</text>
+      <text x="45" y="156" text-anchor="middle" class="flow-text">built to endure</text>
+    </g>
 
-<text x="320" y="160" class="title">
-Raghuramreddy
-</text>
+    <g transform="translate(198 0)">
+      <circle cx="45" cy="45" r="38" class="node"/>
+      <path d="M21 48 H31 L38 32 L51 62 L59 45 H70" fill="none" stroke="#1E3A8A" stroke-width="4" stroke-linecap="round"/>
+      <text x="45" y="112" text-anchor="middle" class="flow-title">SIGNALS</text>
+      <text x="45" y="137" text-anchor="middle" class="flow-text">Observe everything.</text>
+      <text x="45" y="156" text-anchor="middle" class="flow-text">Understand patterns.</text>
+    </g>
 
-<text x="320" y="205" class="subtitle">
-Designing technology for human experience
-</text>
+    <g transform="translate(396 0)">
+      <circle cx="45" cy="45" r="38" class="node"/>
+      <path d="M31 35 C25 42 28 55 39 56 C38 66 52 67 53 56 C65 56 69 43 60 36 C58 25 43 22 38 31 C35 30 33 32 31 35 Z" fill="none" stroke="#1E3A8A" stroke-width="4"/>
+      <text x="45" y="112" text-anchor="middle" class="flow-title">INTELLIGENCE</text>
+      <text x="45" y="137" text-anchor="middle" class="flow-text">Signals become</text>
+      <text x="45" y="156" text-anchor="middle" class="flow-text">actionable insight</text>
+    </g>
 
-<line
-x1="320"
-y1="235"
-x2="760"
-y2="235"
-stroke="url(#line)"
-stroke-width="3"
-stroke-linecap="round"/>
+    <g transform="translate(594 0)">
+      <circle cx="45" cy="45" r="38" class="node"/>
+      <path d="M45 22 L64 31 V47 C64 60 55 68 45 72 C35 68 26 60 26 47 V31 Z" fill="none" stroke="#1E3A8A" stroke-width="4"/>
+      <text x="45" y="112" text-anchor="middle" class="flow-title">GOVERNANCE</text>
+      <text x="45" y="137" text-anchor="middle" class="flow-text">Trust, policy,</text>
+      <text x="45" y="156" text-anchor="middle" class="flow-text">compliance</text>
+    </g>
 
-<text x="320" y="300" class="identity">
-Intelligent Infrastructure Ecosystems
-</text>
+    <g transform="translate(792 0)">
+      <circle cx="45" cy="45" r="38" class="node"/>
+      <circle cx="45" cy="28" r="8" fill="none" stroke="#1E3A8A" stroke-width="4"/>
+      <circle cx="28" cy="60" r="8" fill="none" stroke="#1E3A8A" stroke-width="4"/>
+      <circle cx="62" cy="60" r="8" fill="none" stroke="#1E3A8A" stroke-width="4"/>
+      <text x="45" y="112" text-anchor="middle" class="flow-title">COGNITION</text>
+      <text x="45" y="137" text-anchor="middle" class="flow-text">Context becomes</text>
+      <text x="45" y="156" text-anchor="middle" class="flow-text">explainable</text>
+    </g>
 
-<text x="320" y="345" class="small">
-Operational Intelligence • Lifecycle Governance • Infrastructure Cognition
-</text>
+    <g transform="translate(990 0)">
+      <circle cx="45" cy="45" r="38" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="4" filter="url(#shadow)"/>
+      <circle cx="45" cy="34" r="12" fill="none" stroke="#1E3A8A" stroke-width="4"/>
+      <path d="M24 69 C28 52 62 52 66 69" fill="none" stroke="#1E3A8A" stroke-width="4" stroke-linecap="round"/>
+      <text x="45" y="112" text-anchor="middle" class="flow-title">HUMAN CONTROL</text>
+      <text x="45" y="137" text-anchor="middle" class="flow-text">Engineers guide.</text>
+      <text x="45" y="156" text-anchor="middle" class="flow-text">Humans decide.</text>
+    </g>
+  </g>
 
-<!-- flow -->
+  <!-- Bottom cards: 3 + 2 layout prevents right cutoff -->
+  <g class="font" transform="translate(220 715)">
+    <rect x="0" y="0" width="380" height="72" rx="20" class="card"/>
+    <text x="190" y="28" text-anchor="middle" class="chip-title">LIFECYCLE GOVERNANCE</text>
+    <text x="190" y="52" text-anchor="middle" class="chip-text">Systems evolve under control</text>
 
-<g transform="translate(980 120)">
+    <rect x="430" y="0" width="380" height="72" rx="20" class="card"/>
+    <text x="620" y="28" text-anchor="middle" class="chip-title">GOVERNANCE-GUIDED</text>
+    <text x="620" y="52" text-anchor="middle" class="chip-text">Trust through controlled systems</text>
 
-<circle cx="0" cy="0" r="38" fill="#13203A"/>
-<circle cx="0" cy="0" r="14" fill="#22D3EE"/>
+    <rect x="860" y="0" width="380" height="72" rx="20" class="card"/>
+    <text x="1050" y="28" text-anchor="middle" class="chip-title">OPERATIONAL INTELLIGENCE</text>
+    <text x="1050" y="52" text-anchor="middle" class="chip-text">Signals become decisions</text>
+  </g>
 
-<circle cx="170" cy="0" r="38" fill="#13203A"/>
-<circle cx="170" cy="0" r="14" fill="#22D3EE"/>
+  <g class="font" transform="translate(435 810)">
+    <rect x="0" y="0" width="420" height="72" rx="20" class="card"/>
+    <text x="210" y="28" text-anchor="middle" class="chip-title">HUMAN-GOVERNED AI</text>
+    <text x="210" y="52" text-anchor="middle" class="chip-text">AI assists. Engineers decide.</text>
 
-<circle cx="340" cy="0" r="38" fill="#13203A"/>
-<circle cx="340" cy="0" r="14" fill="#22D3EE"/>
+    <rect x="470" y="0" width="420" height="72" rx="20" class="card"/>
+    <text x="680" y="28" text-anchor="middle" class="chip-title">INFRASTRUCTURE RESILIENCE</text>
+    <text x="680" y="52" text-anchor="middle" class="chip-text">Adaptive systems at scale</text>
+  </g>
 
-<circle cx="510" cy="0" r="38" fill="#1E1B4B"/>
-<circle cx="510" cy="0" r="14" fill="#8B5CF6"/>
-
-<line
-x1="38"
-y1="0"
-x2="132"
-y2="0"
-stroke="#334155"
-stroke-width="2"/>
-
-<line
-x1="208"
-y1="0"
-x2="302"
-y2="0"
-stroke="#334155"
-stroke-width="2"/>
-
-<line
-x1="378"
-y1="0"
-x2="472"
-y2="0"
-stroke="#334155"
-stroke-width="2"/>
-
-<text x="-52" y="82" class="node">
-INFRASTRUCTURE
-</text>
-
-<text x="130" y="82" class="node">
-SIGNALS
-</text>
-
-<text x="280" y="82" class="node">
-INTELLIGENCE
-</text>
-
-<text x="445" y="82" class="node">
-HUMAN CONTROL
-</text>
-
-</g>
-
-<!-- philosophy -->
-
-<text x="980" y="420"
-font-family="Segoe UI"
-font-size="18"
-fill="#CBD5E1">
-AI assists. Engineers decide.
-</text>
-
-<!-- website -->
-
-<rect
-x="1210"
-y="395"
-width="260"
-height="48"
-rx="14"
-fill="#0F172A"
-stroke="#334155"/>
-
-<text
-x="1340"
-y="425"
-text-anchor="middle"
-class="url">
-raghuramreddy.tech
-</text>
-
+  <!-- URL badge safely inside -->
+  <g transform="translate(1390 845)">
+    <rect x="0" y="0" width="300" height="46" rx="23" fill="#FFFFFF" stroke="#BFD7FF" stroke-width="2" filter="url(#shadow)"/>
+    <text x="150" y="30" text-anchor="middle" class="font" font-size="21" font-weight="900" fill="#0B1733">raghuramreddy.tech</text>
+  </g>
 </svg>
