@@ -1,10 +1,3 @@
-<div align="center">
-
-<img
-  src="assets/images/eocs-signature-banner.svg"
-  alt="Raghuramreddy — Intelligent Infrastructure Ecosystems and EOCS"
-  width="100%"
-/>
 
 </div>
 
