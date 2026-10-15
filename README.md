@@ -39,13 +39,42 @@ My work spans cloud engineering, DevSecOps, SRE, and applied AI with a focus on 
 
 ---
 
+## ✦ Product Lens: Enterprise Operating Intelligence
+
+```mermaid
+flowchart LR
+    A[Enterprise Applications] --> B[Delivery Pipelines]
+    B --> C[Security & Policy Gates]
+    C --> D[Runtime Signals]
+    D --> E[Observability & Intelligence]
+    E --> F[Governance & Control]
+    F --> G[Human Decision Making]
+    G --> H[Resilient Operations]
+    H --> A
+```
+
+From code to cloud to operations, I focus on turning delivery and runtime signals into governable, resilient engineering decisions.
+
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center"><strong>10+ Years</strong><br/>Platform strategy<br/>and execution</td>
+    <td align="center"><strong>100+ Pipelines</strong><br/>Built and evolved</td>
+    <td align="center"><strong>Secure by Default</strong><br/>DevSecOps built in</td>
+    <td align="center"><strong>Human-led AI</strong><br/>Evidence before automation</td>
+  </tr>
+</table>
+
+</div>
+
+---
+
 ## ✦ Enterprise Operating Model
 
 ```text
 Infrastructure → Signals → Intelligence → Governance → Human Control
 ```
-
-From code to cloud to operations, I focus on turning delivery and runtime signals into governable, resilient engineering decisions.
 
 <div align="center">
 
