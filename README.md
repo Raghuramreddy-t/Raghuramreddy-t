@@ -1,9 +1,5 @@
 ﻿<div align="center">
 
-<a href="https://raghuramreddy.tech">
-  <img src="./banner.png" width="100%" alt="Raghuramreddy — portfolio banner" />
-</a>
-
 # Raghuramreddy Thummalapalli
 
 **Intelligent Infrastructure Ecosystems Architect**
